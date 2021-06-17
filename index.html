@@ -80,7 +80,7 @@
   <!--end-->
   <div class="grid-container">
     <div class="item1">
-        <img src="assets/images/me.JPG" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+        <img src="assets/images/me.JPG" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" >
     </div>
     <div class="item2" style="text-align: justify; margin-left: 20px;">
         <p> Hi! My name is Shalom, a Full Stack developer with experience in JavaScript, React, Redux, HTML/CSS, Ruby on Rails, and C++. I have a background in business with a focus on banking and research and development. I've had the opportunity to work in Asia, Africa and the US in different sectors. At every job, I've always had a love for learning and using technology to solve problems and improve lives.
@@ -116,7 +116,7 @@
         <button onclick="document.getElementById('id1').style.display='block'" class="w3-button w3-black"><img src="assets/images/react4.PNG" style="width:100%" class="w3-hover-opacity" alt="Rails project"></button>
 
         <!-- The Modal -->
-        <div id="id1" class="modal">
+        <div id="id1" class="modal" onclick="document.getElementById('id1').style.display='none'">
 
           <!-- Modal content -->
           <div class="modal-content" style="background-color: white; width: 900px">
@@ -156,7 +156,7 @@
         <button onclick="document.getElementById('id2').style.display='block'" class="w3-button w3-black"><img src="assets/images/rails.PNG" style="width:100%" class="w3-hover-opacity" alt="Rails project"></button>
 
         <!-- The Modal -->
-        <div id="id2" class="modal">
+        <div id="id2" class="modal" onclick="document.getElementById('id2').style.display='none'">
 
           <!-- Modal content -->
           <div class="modal-content" style="background-color: white; width: 900px">
@@ -195,7 +195,7 @@
         <button onclick="document.getElementById('id3').style.display='block'" class="w3-button w3-black"><img src="assets/images/js2.PNG" style="width:100%" class="w3-hover-opacity" alt="Rails project"></button>
 
         <!-- The Modal -->
-        <div id="id3" class="modal">
+        <div id="id3" class="modal" onclick="document.getElementById('id3').style.display='none'">
 
           <!-- Modal content -->
           <div class="modal-content" style="background-color: white; width: 900px">
@@ -231,7 +231,7 @@
         <button onclick="document.getElementById('id4').style.display='block'" class="w3-button w3-black"><img src="assets/images/sinatra5.PNG" style="width:100%" class="w3-hover-opacity" alt="Rails project"></button>
 
         <!-- The Modal -->
-        <div id="id4" class="modal">
+        <div id="id4" class="modal" onclick="document.getElementById('id4').style.display='none'">
 
           <!-- Modal content -->
           <div class="modal-content" style="background-color: white; width: 900px">
@@ -267,7 +267,7 @@
         <button onclick="document.getElementById('id5').style.display='block'" class="w3-button w3-black"><img src="assets/images/cl3.PNG" style="width:100%" class="w3-hover-opacity" alt="Rails project"></button>
 
         <!-- The Modal -->
-        <div id="id5" class="modal">
+        <div id="id5" class="modal" onclick="document.getElementById('id5').style.display='none'">
 
           <!-- Modal content -->
           <div class="modal-content" style="background-color: white; width: 900px">
@@ -304,6 +304,10 @@
 </div><hr>
 
 
+
+
+
+
 <!-- Container (Rsume Section) -->
 <div class="w3-content w3-container w3-padding-64" id="resume">
   <!-- Second Parallax Image with Portfolio Text -->
@@ -323,7 +327,7 @@
         <button style="color:black; background: lightgrey"><a href="http://www.linkedin.com/in/shalom-kebede"  target="_blank">LinkedIn</a></button>
     </div>
     <div class="item1">
-      <img src="assets/images/resume2.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" style="height:50vh" alt="Resume Pic" width="500" height="333">
+      <img src="assets/images/resume2.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" style="height:40vh" alt="Resume Pic">
     </div>
   </div>
 </div><hr>
@@ -383,44 +387,44 @@
 </footer>
  
 <script>
-// // Modal Image Gallery
-// function onClick(element) {
-//   document.getElementById("img01").src = element.src;
-//   document.getElementById("modal01").style.display = "block";
-//   var captionText = document.getElementById("caption");
-//   var detailsText = document.getElementById("details");
+  // // Modal Image Gallery
+  // function onClick(element) {
+  //   document.getElementById("img01").src = element.src;
+  //   document.getElementById("modal01").style.display = "block";
+  //   var captionText = document.getElementById("caption");
+  //   var detailsText = document.getElementById("details");
 
-//   captionText.innerHTML = element.alt;
-//   detailsText.innerHTML += details;
-// }
+  //   captionText.innerHTML = element.alt;
+  //   detailsText.innerHTML += details;
+  // }
 
-// Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-    }
-}
+  // Change style of navbar on scroll
+  window.onscroll = function() {myFunction()};
+  function myFunction() {
+      var navbar = document.getElementById("myNavbar");
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+          navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+      } else {
+          navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+      }
+  }
 
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-
-
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function toggleFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+      } else {
+          x.className = x.className.replace(" w3-show", "");
+      }
+  }
 
 
-function toggleModal(e){
+
+
+
   // Get the modal
-  var modal = document.getElementById("myModal");
+  var modal = document.getElementsByClassName("modal");
 
   // Get the button that opens the modal
   var btn = document.getElementById("myBtn");
@@ -433,10 +437,6 @@ function toggleModal(e){
     modal.style.display = "block";
   }
 
-  // When the user clicks on <span> (x), close the modal
-  span.onclick = function() {
-    modal.style.display = "none";
-  }
 
   // When the user clicks anywhere outside of the modal, close it
   window.onclick = function(event) {
@@ -444,9 +444,10 @@ function toggleModal(e){
       modal.style.display = "none";
     }
   }
-}
-
-
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
 
 
 </script>
