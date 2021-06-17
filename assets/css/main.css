@@ -177,9 +177,9 @@ a{
 }
 
 .w3-col{
-  padding: 1px!important;
+  /* padding: 1px!important; */
   /* margin:0px; */
-  margin-bottom: 2px;
+  margin-bottom: 15px;
 
   width:300px;
     height:300px;    
