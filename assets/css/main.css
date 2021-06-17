@@ -236,3 +236,10 @@ input{
 .w3-button{
   padding: 0.9rem;
 }
+
+.iconify { 
+  width: 36px; 
+  height: 36px; 
+  padding: 0px!important;
+  margin-bottom: 0px!important;
+}
