@@ -43,7 +43,7 @@
   </div>
 </div>
 
-<!-- First Parallax Image with Logo Text -->
+<!-- Home Jumbotron -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home" style="background-image: url('./assets/images/1.jpg');">
   <div class="w3-display-middle" style="white-space:nowrap;">
     <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"> <span class="w3-hide-small">SHALOM</span> KEBEDE</span>
@@ -59,19 +59,14 @@
         <button><a href="#portfolio">PROJECTS</a></button>
         <button><a href="#resume">RESUME</a></button>
         <button><a href="#contact">CONTACT</a></button>
-    </div>
-        
-    </div>
-
-</div>
-
-
-  
-</div>
+    </div>      
+  </div>
+</div> 
+<!-- </div> -->
 
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
-  <!-- Second Parallax Image with Portfolio Text -->
+  <!-- About Me Label -->
   <div class="bgimg-2 w3-display-container w3-opacity-min">
     <div class="w3-display-middle">
         <span class="w3-xxlarge w3-text-white w3-wide">ABOUT ME</span>
@@ -90,15 +85,12 @@
         I believe my customer centric and goal oriented mindset as a business professional, my math background as a CS student, and my attention to detail and innovation as a researcher will greatly fuel my growth in the field of programming. I look forward to contribute my skills and past experiences to this journey!</p>      
     </div>
   </div>
-</div>
-
-  <hr>
+</div><hr>
 
 
 <!--PORTFOLIO SECTION-->
-
 <div class="w3-content w3-container w3-padding-64" id="portfolio">
-    <!-- Second Parallax Image with Portfolio Text -->
+    <!-- Portfolio Label -->
     <div class="bgimg-2 w3-display-container w3-opacity-min">
       <div class="w3-display-middle">
           <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
@@ -304,13 +296,9 @@
 </div><hr>
 
 
-
-
-
-
 <!-- Container (Rsume Section) -->
 <div class="w3-content w3-container w3-padding-64" id="resume">
-  <!-- Second Parallax Image with Portfolio Text -->
+  <!-- Resume Label -->
   <div class="bgimg-2 w3-display-container w3-opacity-min">
     <div class="w3-display-middle">
         <span class="w3-xxlarge w3-text-white w3-wide">RESUME</span>
@@ -333,12 +321,9 @@
 </div><hr>
 
 
-
-
-
 <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding-64" id="contact">
-    <!-- Third Parallax Image with Portfolio Text -->
+    <!-- Contact Label -->
     <div class="bgimg-3 w3-display-container w3-opacity-min">
         <div class="w3-display-middle">
         <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
@@ -379,78 +364,62 @@
     <a href="https://dev.to/shalom" target="_blank"><span class="label"><i class="fa fa-dev-to" style="font-size:20px"></i></span></a>
 
   </div>
-  <p style="color: lightgrey; opacity:.25">
+  <p style="color: lightgrey; opacity:.35">
     ©  ShalomSk 2021
     <a href="https://www.w3schools.com/" target="_blank">W3Schools</a>
     <a href="https://unsplash.com/" target="_blank">Unsplash</a>
   </p>
 </footer>
  
-<script>
-  // // Modal Image Gallery
-  // function onClick(element) {
-  //   document.getElementById("img01").src = element.src;
-  //   document.getElementById("modal01").style.display = "block";
-  //   var captionText = document.getElementById("caption");
-  //   var detailsText = document.getElementById("details");
+  <script>
+    // Change style of navbar on scroll
+    window.onscroll = function() {myFunction()};
+    function myFunction() {
+        var navbar = document.getElementById("myNavbar");
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+        } else {
+            navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+        }
+    }
 
-  //   captionText.innerHTML = element.alt;
-  //   detailsText.innerHTML += details;
-  // }
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function toggleFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
 
-  // Change style of navbar on scroll
-  window.onscroll = function() {myFunction()};
-  function myFunction() {
-      var navbar = document.getElementById("myNavbar");
-      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-          navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-      } else {
-          navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+
+    // Get the modal
+    var modal = document.getElementsByClassName("modal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on the button, open the modal
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
       }
-  }
-
-  // Used to toggle the menu on small screens when clicking on the menu button
-  function toggleFunction() {
-      var x = document.getElementById("navDemo");
-      if (x.className.indexOf("w3-show") == -1) {
-          x.className += " w3-show";
-      } else {
-          x.className = x.className.replace(" w3-show", "");
-      }
-  }
-
-
-
-
-
-  // Get the modal
-  var modal = document.getElementsByClassName("modal");
-
-  // Get the button that opens the modal
-  var btn = document.getElementById("myBtn");
-
-  // Get the <span> element that closes the modal
-  var span = document.getElementsByClassName("close")[0];
-
-  // When the user clicks on the button, open the modal
-  btn.onclick = function() {
-    modal.style.display = "block";
-  }
-
-
-  // When the user clicks anywhere outside of the modal, close it
-  window.onclick = function(event) {
-    if (event.target == modal) {
+    }
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
       modal.style.display = "none";
     }
-  }
-  // When the user clicks on <span> (x), close the modal
-  span.onclick = function() {
-    modal.style.display = "none";
-  }
 
-
-</script>
+  </script>
 
 </body>
 </html>
