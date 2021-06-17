@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/css/main.css" />
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top" style="color:white">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"> <span class="w3-hide-small">SHALOM</span> KEBEDE</span>
+    <h2 style="text-align:center; color:white;">Full Stack Software Engineer</h2>
+    <div style="text-align: center; color:white ">
+        <a href="#" ><span class="label"><i class="fa fa-twitter" style="font-size:36px"></i></span></a>
+        <a href="#" ><span class="label"><i class="fa fa-github" style="font-size:36px"></i></span></a>
+        <a href="#" ><span class="label"><i class="fa fa-medium" style="font-size:36px"></i></span></a>
+        <a href="http://www.linkedin.com/in/shalom-kebede" ><span class="label"><i class="fa fa-linkedin-square" style="font-size:36px"></i></span></a>
+    </div><hr>
+    <div class="home-nav">
+        <li><button><a href="#about">ABOUT ME</a></button></li>
+        <button><a href="#portfolio">PROJECTS</a></button>
+        <button><a href="https://drive.google.com/file/d/1n8GOvikbg25zXdNXEIEBpgUMbXdE_lIJ/view?usp=sharing" target="_blank" >RESUME</a></button>
+        <button><a href="#contact">CONTACT</a></button>
+    </div>
+        
+    </div>
+
+</div>
+
+
+  
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <!-- Second Parallax Image with Portfolio Text -->
+  <div class="bgimg-2 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-white w3-wide">ABOUT ME</span>
+    </div>
+    </div><br>
+  <!--end-->
+  <div class="grid-container">
+    <div class="item1">
+        <img src="assets/images/me.JPG" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+    </div>
+    <div class="item2" style="text-align: justify; margin-left: 20px;">
+        <p> Hi! My name is Shalom, a Full Stack developer with experience in JavaScript, React, Redux, HTML/CSS, Ruby on Rails, and C++. I have a background in business with a focus on banking and research and development. I've had the opportunity to work in Asia, Africa and the US in different sectors. At every job, I've always had a love for learning and using technology to solve problems and improve lives.
+        <br><br>
+        In 2019, I decided to take this interest further and enrolled in school as a Computer Science student. I also started learning to program on Code Academy and, in 2020, enrolled in Flatiron's Software Engineering program.  
+        
+        I believe my customer centric and goal oriented mindset as a business professional, my math background as a CS student, and my attention to detail and innovation as a researcher will greatly fuel my growth in the field of programming. I look forward to contribute my skills and past experiences to this journey!</p>      
+    </div>
+  </div>
+</div>
+
+  <hr>
+
+<!--PORTFOLIO SECTION-->
+
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+    <!-- Second Parallax Image with Portfolio Text -->
+    <div class="bgimg-2 w3-display-container w3-opacity-min">
+      <div class="w3-display-middle">
+          <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+      </div>
+      </div><br>
+    <!--end-->
+  
+  <h3 class="w3-center">MY RECENT WORK</h3>
+    <p class="w3-center"><em>Here are some of my latest projects</em></p><br>
+    <div class="w3-row-padding w3-center">
+
+      <div class="w3-col m4">
+        <!--modal popup-->
+        <!-- Trigger/Open The Modal -->
+        <button onclick="document.getElementById('id1').style.display='block'" class="w3-button w3-black"><img src="assets/images/react4.PNG" style="width:100%" class="w3-hover-opacity" alt="Rails project"></button>
+
+        <!-- The Modal -->
+        <div id="id1" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content" style="background-color: white; width: 900px">
+            <span class="close" onclick="document.getElementById('id1').style.display='none'">&times;</span>
+            <h2 style="text-align: center;">Simple Sales</h2>
+              <div class="grid-container">
+                <div class="item1">        
+                  <a href="https://www.youtube.com/watch?v=jzYmosewjsw" target="_blank"><img src="assets/images/react4.PNG" style="height: 50vh;" alt="Rails project"></a> 
+                </div>
+                <div class="item2" style="text-align: justify; line-height:1.7; margin-left:0px; padding-top:0px">
+                  <p>ReactJS/Redux app that is a consumer-to-consumer e-commerce platform. It allows users to buy and sell furniture from one another</p>
+                  <em><b>Tecnologies & Libraries Used:</b></em><br>
+                  <div style="text-align: left!important;">
+                    <p id="tech-used">React</p>
+                    <p id="tech-used">Redux</p>
+                    <p id="tech-used">Rails</p>
+                    <p id="tech-used">React-Axios</p>
+                    <p id="tech-used">Bootstrap-React</p>
+                    <p id="tech-used">Material UI</p>
+                    <p id="tech-used">Sqlite</p>
+                    <p id="tech-used">Active Record Storage</p>
+                  </div>
+                  <br>
+                  <a href="https://github.com/habeshawit/react-project-frontend/tree/refactorBranch" target="_blank" ><span class="label"><i class="fa fa-github" style="font-size:24px; color:black"></i></span></a>
+                  <a href="#" target="_blank"><span class="label"><i class="fa fa-medium" style="font-size:24px; color:black"></i></span></a>
+                  <a href="https://youtu.be/QqF1VRUlUrQ" target="_blank"><span class="label"><i class="fa fa-youtube-play" style="font-size:24px;color:red"></i></span></a>   
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="w3-col m4">
+        <!--modal popup-->
+        <!-- Trigger/Open The Modal -->
+        <button onclick="document.getElementById('id2').style.display='block'" class="w3-button w3-black"><img src="assets/images/rails.PNG" style="width:100%" class="w3-hover-opacity" alt="Rails project"></button>
+
+        <!-- The Modal -->
+        <div id="id2" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content" style="background-color: white; width: 900px">
+            <span class="close" onclick="document.getElementById('id2').style.display='none'">&times;</span>
+            <h2 style="text-align: center;">Divine Flavor</h2>
+              <div class="grid-container">
+                <div class="item1">        
+                  <a href="https://www.youtube.com/watch?v=jzYmosewjsw" target="_blank"><img src="assets/images/rails.PNG" style="height: 50vh;" alt="Rails project"></a> 
+                </div>
+                <div class="item2" style="text-align: justify; line-height:1.7; margin-left:0px; padding-top:0px">
+                  <p>A Ruby on Rails recipe management app where users can create, edit, save recipes and get inspiration from others. It has bit of a social aspect to it as users can add friends, comment on their content and save their recipes as favorites.</p>
+                  <em><b>Tecnologies & Libraries Used:</b></em><br>
+                  <div style="text-align: left!important;">
+                    <p id="tech-used">Ruby on Rails</p>
+                    <p id="tech-used">Bootstrap</p>
+                    <p id="tech-used">Omniauth</p>
+                    <p id="tech-used">Devise Gem</p>
+                    <p id="tech-used">Jquery</p>
+                    <p id="tech-used">Sqlite</p>
+                    <p id="tech-used">Postgres</p>
+                    <p id="tech-used">Active Record Storage</p>
+                  </div>
+                  <br>
+                  <a href="https://github.com/habeshawit/divine-flavor" target="_blank" ><span class="label"><i class="fa fa-github" style="font-size:24px; color:black"></i></span></a>
+                  <a href="#" target="_blank"><span class="label"><i class="fa fa-medium" style="font-size:24px; color:black"></i></span></a>
+                  <a href="https://youtu.be/jzYmosewjsw" target="_blank"><span class="label"><i class="fa fa-youtube-play" style="font-size:24px;color:red"></i></span></a>   
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-col m4">
+        <!--modal popup-->
+        <!-- Trigger/Open The Modal -->
+        <button onclick="document.getElementById('id3').style.display='block'" class="w3-button w3-black"><img src="assets/images/js2.PNG" style="width:100%" class="w3-hover-opacity" alt="Rails project"></button>
+
+        <!-- The Modal -->
+        <div id="id3" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content" style="background-color: white; width: 900px">
+            <span class="close" onclick="document.getElementById('id3').style.display='none'">&times;</span>
+            <h2 style="text-align: center;">My Devotional</h2>
+              <div class="grid-container">
+                <div class="item1">        
+                  <a href="https://www.youtube.com/watch?v=jzYmosewjsw" target="_blank"><img src="assets/images/js2.PNG" style="height: 50vh;" alt="Rails project"></a> 
+                </div>
+                <div class="item2" style="text-align: justify; line-height:1.7; margin-left:0px; padding-top:0px">
+                  <p>A Single Page Application using Vanilla JavaScript and a Rails API. It's an online devotional app where users can save daily bible devotions and scripture reflections</p>
+                  <em><b>Tecnologies & Libraries Used:</b></em><br>
+                  <div style="text-align: left!important;">
+                    <p id="tech-used">Vanilla JS</p>
+                    <p id="tech-used">Ruby on Rails</p>
+                    <p id="tech-used">CSS</p>
+                    <p id="tech-used">Bootstrap</p>
+                    <p id="tech-used">Sqlite</p>
+                  </div>
+                  <br>
+                  <a href="https://github.com/habeshawit/js_project_backend" target="_blank" ><span class="label"><i class="fa fa-github" style="font-size:24px; color:black"></i></span></a>
+                  <a href="#" target="_blank"><span class="label"><i class="fa fa-medium" style="font-size:24px; color:black"></i></span></a>
+                  <a href="https://youtu.be/h8rq3MLsxE0" target="_blank"><span class="label"><i class="fa fa-youtube-play" style="font-size:24px;color:red"></i></span></a>   
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-col m4">
+        <!--modal popup-->
+        <!-- Trigger/Open The Modal -->
+        <button onclick="document.getElementById('id4').style.display='block'" class="w3-button w3-black"><img src="assets/images/sinatra5.PNG" style="width:100%" class="w3-hover-opacity" alt="Rails project"></button>
+
+        <!-- The Modal -->
+        <div id="id4" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content" style="background-color: white; width: 900px">
+            <span class="close" onclick="document.getElementById('id4').style.display='none'">&times;</span>
+            <h2 style="text-align: center;">Edu Tasks</h2>
+              <div class="grid-container">
+                <div class="item1">        
+                  <a href="https://www.youtube.com/watch?v=jzYmosewjsw" target="_blank"><img src="assets/images/sinatra5.PNG" style="height: 50vh;" alt="Rails project"></a> 
+                </div>
+                <div class="item2" style="text-align: justify; line-height:1.7; margin-left:0px; padding-top:0px">
+                  <p>A Content Managment System build using Sinatra. It's an app where students can keep track of assignments, exams, and to-do-lists related to classes they are enrolled in.</p>
+                  <em><b>Tecnologies & Libraries Used:</b></em><br>
+                  <div style="text-align: left!important;">
+                    <p id="tech-used">Sinatra</p>
+                    <p id="tech-used">Ruby</p>
+                    <p id="tech-used">Sass/SCSS</p>
+                    <p id="tech-used">Bycrypt</p>
+                    <p id="tech-used">Sqlite</p>
+                  </div>
+                  <br>
+                  <a href="https://github.com/habeshawit/edu_tasks" target="_blank" ><span class="label"><i class="fa fa-github" style="font-size:24px; color:black"></i></span></a>
+                  <a href="#" target="_blank"><span class="label"><i class="fa fa-medium" style="font-size:24px; color:black"></i></span></a>
+                  <a href="https://www.youtube.com/watch?v=wDub2aVQKGQ" target="_blank"><span class="label"><i class="fa fa-youtube-play" style="font-size:24px;color:red"></i></span></a>   
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-col m4">
+        <!--modal popup-->
+        <!-- Trigger/Open The Modal -->
+        <button onclick="document.getElementById('id5').style.display='block'" class="w3-button w3-black"><img src="assets/images/cl3.PNG" style="width:100%" class="w3-hover-opacity" alt="Rails project"></button>
+
+        <!-- The Modal -->
+        <div id="id5" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content" style="background-color: white; width: 900px">
+            <span class="close" onclick="document.getElementById('id5').style.display='none'">&times;</span>
+            <h2 style="text-align: center;">World Traveler</h2>
+              <div class="grid-container">
+                <div class="item1">        
+                  <a href="https://www.youtube.com/watch?v=jzYmosewjsw" target="_blank"><img src="assets/images/cl3.PNG" style="height: 50vh;" alt="Rails project"></a> 
+                </div>
+                <div class="item2" style="text-align: justify; line-height:1.7; margin-left:0px; padding-top:0px">
+                  <p>A Ruby gem that provides a Command Line Interface for users to view top destinations around the world as per Lonely Planet's travel highlights per continent. It's designed to help user's explore the world through a command line interface. It askes users for a continent of choice, displays highlights in that continent and details for a chosen highlight.</p>
+                  <em><b>Tecnologies & Libraries Used:</b></em><br>
+                  <div style="text-align: left!important;">
+                    <p id="tech-used">Ruby</p>
+                    <p id="tech-used">Nokogiri</p>
+                  </div>
+                  <br>
+                  <a href="https://github.com/habeshawit/world_traveler" target="_blank" ><span class="label"><i class="fa fa-github" style="font-size:24px; color:black"></i></span></a>
+                  <a href="#" target="_blank"><span class="label"><i class="fa fa-medium" style="font-size:24px; color:black"></i></span></a>
+                  <a href="https://www.youtube.com/watch?v=qZpzjPJF8gY" target="_blank"><span class="label"><i class="fa fa-youtube-play" style="font-size:24px;color:red"></i></span></a>   
+                  <a href="https://rubygems.org/gems/world_traveler" target="_blank"><span class="label"><img src="assets/images/gem.PNG" style="
+                        height: 21px!important;
+                        width: 21px!important;
+                        margin-bottom: 8px!important;
+                        padding: 0px!important;
+                    "/>   
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+</div><hr>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+    <!-- Third Parallax Image with Portfolio Text -->
+    <div class="bgimg-3 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+        </div>
+    </div><br><!--end-->
+    <div >
+      <form action="https://formspree.io/f/xyyljogb" method="POST">
+        
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">    
+          <div class="w3-half">
+              <label>Name:</label>
+            <input class="w3-input w3-border" type="text" required name="Name">
+          </div>
+
+          <div class="w3-half">
+             <label>Email:</label>
+            <input class="w3-input w3-border" type="text" required name="Email">
+          </div>
+        </div>
+        <label>Message:</label>
+        <textarea class="w3-input w3-border" style="height:30vh" type="textarea" required name="Message"></textarea>
+        
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+<!-- </div> -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off" id="footer">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <a href="#" target="_blank"><span class="label"><i class="fa fa-twitter w3-hover-opacity"></i></span></a>
+    <a href="http://www.linkedin.com/in/shalom-kebede" target="_blank"><span class="label"><i class="fa fa-linkedin w3-hover-opacity"></i></span></a>
+    <a href="https://github.com/habeshawit" target="_blank"><span class="label"><i class="fa fa-github" style="font-size:20px"></i></span></a>
+    <a href="#" target="_blank"><span class="label"><i class="fa fa-medium" style="font-size:20px"></i></span></a>
+  </div>
+</footer>
+ 
+<script>
+// // Modal Image Gallery
+// function onClick(element) {
+//   document.getElementById("img01").src = element.src;
+//   document.getElementById("modal01").style.display = "block";
+//   var captionText = document.getElementById("caption");
+//   var detailsText = document.getElementById("details");
+
+//   captionText.innerHTML = element.alt;
+//   detailsText.innerHTML += details;
+// }
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+
+
+
+function toggleModal(e){
+  // Get the modal
+  var modal = document.getElementById("myModal");
+
+  // Get the button that opens the modal
+  var btn = document.getElementById("myBtn");
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+
+  // When the user clicks on the button, open the modal
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+}
+
+
+
+
+</script>
+
+</body>
+</html>

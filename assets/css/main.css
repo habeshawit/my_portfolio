@@ -1,0 +1,238 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('/assets/images/1.jpg');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("/w3images/parallax2.jpg");
+  /* min-height: 400px; */
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("/w3images/parallax3.jpg");
+  /* min-height: 400px; */
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    /* min-height: 400px; */
+  }
+}
+
+button{
+    background: none;
+    border:none;
+    border-right-color: white;
+    color: white;
+    padding: 10px;
+    border-left: solid 1px #ffffff;   
+}
+
+button:hover{
+  color:white;
+  font-weight:900;
+}
+
+a{
+    text-decoration: none;
+    padding: 20px;
+  
+}
+
+.w3-padding-large {
+  padding: 12px 24px!important;
+  margin: 75px;
+}
+
+
+/* .nav.use-middle:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: calc(50% - 1px);
+  width: 1px;
+  height: 100%;
+  background: #ffffff;
+} */
+
+/* .nav.use-middle ul li.is-middle {
+  border-left: 0;
+} */
+
+
+
+.home-nav{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  margin-bottom: 0;
+  list-style: none;
+  padding-left: 0;
+  border: solid 1px #ffffff;
+  border-radius: 4px;
+  /* font-weight: 500; */
+}
+
+
+
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+
+
+.grid-container > div {
+  text-align: center;
+  padding: 20px 0;
+}
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0,0.85); /* Fallback color */
+  /* background-color: rgba(0,0,0,0.4);  */
+  
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #e66d6d;
+  margin: 10% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.w3-text-white, .w3-hover-text-white:hover {
+  color: rgb(131, 121, 121)!important;
+}
+
+#myBtn{
+  color:black;
+  padding:0px;
+}
+
+/* .w3-col{
+  height: 50vh!important
+} */
+
+.w3-col img{
+  height: 273px!important;
+    margin-bottom: 35px;
+}
+
+.w3-col{
+  padding: 1px!important;
+  /* margin:0px; */
+  margin-bottom: 2px;
+
+  width:300px;
+    height:300px;    
+    overflow:hidden;
+    position:relative;
+}
+
+
+
+
+/* 
+div.form
+{
+    display: block;
+    text-align: center;
+}
+form
+{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+} */
+
+#contact{
+  max-width: 700px;
+}
+
+input{
+  border-radius:0.5rem
+}
+
+#footer{
+  width:100vw!important;
+  margin-bottom:0!important;
+}
+
+.item2{
+  text-align: justify;
+  line-height: 2.1;
+}
+
+#tech-used{
+  display: inline-block;
+    color: #FFF;
+    padding: 4px 10px;
+    font-size: 10px;
+    text-transform: uppercase;
+    background-color: red;
+    text-align: left!important;
+    margin:2px;
+}
+
+.w3-button{
+  padding: 0.9rem;
+}
